@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>TELA LOGIN</title>
+</head>
+<body>
+    
+    
+    <section>
+        <video autoplay loop muted id="video-background">
+            <source src="/login/componentes/mp3/sunset_-_65182 (Original).mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+       
+        <div class="login">
+            <video id="video1" autoplay muted loop></video>
+        
+            <audio id="meuAudio" controls autoplay loop>
+                <source src="./componentes/mp3/RÜFÜS.mp3" type="audio/mpeg" />
+            </audio>
+        
+            <script>
+                var meuAudio = document.getElementById('meuAudio');
+        
+                meuAudio.addEventListener('loadedmetadata', function () {
+                    meuAudio.currentTime = 0; // Define o tempo de início para 60 segundos (1 minuto)
+                });
+        
+                meuAudio.addEventListener('play', function () {
+                    if (meuAudio.currentTime < 0) {
+                        meuAudio.currentTime = 0; // Garante que, ao pressionar o botão play, ele começará a partir de 60 segundos
+                    }
+                });
+            </script>
+    </script>
+            </script>
+                </script>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+    
+    
+                    <div class="input-box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Senha</label>
+                    </div>
+    
+    
+    
+    
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Lembrar-me <BR><a href="#">Esqueceu a senha</a></label>
+                        
+                    </div>
+                    <button>Entrar</button>
+                    <div class="register">
+                        <p>Não possui uma conta? <a href="#">Registrar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
